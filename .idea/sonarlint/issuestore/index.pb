@@ -183,3 +183,5 @@ W
 'src/test/leetcode2024/CanConstruct.java,9\d\9d7381ba32ad9188c4570de6c41db0f99f5ad1b8
 Z
 *src/test/leetcode2024/CanPlaceFlowers.java,0\8\08032158db44287d6f89575d471870bcb0d98f98
+[
++src/test/leetcode2024/CanVisitAllRooms.java,9\e\9e3d9ba065929af13bf2f4f1497269636df97316
