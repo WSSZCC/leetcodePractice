@@ -1,0 +1,11 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Û»²Âúÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(»×Ì´
+V	java:S125"<This block of commented-out lines of code should be removed.(»úÇÿÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+G
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹
+J
+java:S10664"/Merge this if statement with the enclosing one.(Îúþÿÿÿÿ
