@@ -34,6 +34,30 @@ public class CanSortArray {
 
     }
 
+    /**
+     * @param nums
+     * @return
+     * 优化版
+     */
+    public boolean canSortArray1(int[] nums) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n-1-i; j++) {
+                if(nums[j]>nums[j+1]){
+                    int value1 = getCountOnes(nums[j]);
+                    int value2 = getCountOnes(nums[j+1]);
+                    if(value1!=value2){
+                        return false;
+                    }
+                    int temp = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = temp;
+                }
+            }
+        }
+        return true;
+    }
+
     private static int getCountOnes(int num) {
         int count = 0;
         while (num>0){
