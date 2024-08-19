@@ -29,27 +29,24 @@ public class Multiply {
             int numValue1 = num1.charAt(i) - '0';
             for (int j = m - 1; j >= 0; j--) {
                 int numValue2 = (num2.charAt(j) - '0') * numValue1;
-                int sum = ints[flag1 + flag2] + numValue2;
-                if(sum<10){
-                    ints[flag1+flag2] = sum;
-                }else {
-                    int flag3 = 0;
-                    while (sum>=10){
-                        ints[flag1+flag2+flag3] = sum%10;
-                        sum = ints[flag1+flag2+flag3+1] +sum/10;
-                        flag3++;
-                    }
-                    if(sum!=0){
-                        ints[flag1+flag2+flag3] = sum;
-                    }
-                }
+                ints[flag1 + flag2] +=  numValue2;
                 flag2++;
             }
             flag1++;
         }
+        for (int i = 0;i<ints.length-1;i++){
+            int value = ints[i];
+            ints[i] = value%10;
+            ints[i+1] += value/10;
+        }
+        StringBuilder sb = getStringBuilder(ints);
+        return sb.toString();
+    }
+
+    private static StringBuilder getStringBuilder(int[] ints) {
         StringBuilder sb = new StringBuilder();
         int index = ints.length-1;
-        for (int i = ints.length-1;i>=0;i--){
+        for (int i = ints.length-1; i>=0; i--){
             if(ints[i]!=0){
                 index = i;
                 break;
@@ -58,6 +55,6 @@ public class Multiply {
         for (int i = index; i >= 0; i--) {
             sb.append(ints[i]);
         }
-        return sb.toString();
+        return sb;
     }
 }
