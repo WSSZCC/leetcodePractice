@@ -1,8 +1,5 @@
 package test.leetcode2024;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 满足距离约束且字典序最小的字符串
  */
@@ -13,7 +10,7 @@ public class GetSmallestString {
 
 
     public static String getSmallestString(String s, int k) {
-        if(k==0){
+        if (k == 0) {
             return s;
         }
         char[] chars = new char[s.length()];
