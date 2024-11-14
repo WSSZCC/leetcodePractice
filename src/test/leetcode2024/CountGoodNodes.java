@@ -12,7 +12,7 @@ public class CountGoodNodes {
     public int countGoodNodes(int[][] edges){
         int n = edges.length+1;
         List<Integer>[] lists = new ArrayList[n];
-        Arrays.fill(lists,new ArrayList<>());
+        Arrays.setAll(lists,i->new ArrayList<>());
         for (int[] edge : edges) {
             int x= edge[0];
             int y = edge[1];
