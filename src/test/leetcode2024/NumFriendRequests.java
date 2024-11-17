@@ -15,26 +15,25 @@ public class NumFriendRequests {
         for (int i = 0; i < n; i++) {
             if (preValue != ages[i]) {
                 preValue = ages[i];
-                currentCount = 0;
-                double v = ages[i] * 0.5 + 7;
-                for (int j = 0; j < n; j++) {
-                    if (i == j) {
-                        continue;
-                    }
-                    if (ages[j] > ages[i]) {
-                        break;
-                    }
-                    if (ages[j] <= v) {
-                        continue;
-                    }
-                    if (ages[i] < 100 && ages[j] > 100) {
-                        break;
-                    }
-                    currentCount++;
-                }
+                currentCount = getCurrentCount(ages, n, i);
             }
             count += currentCount;
         }
         return count;
+    }
+
+    private static int getCurrentCount(int[] ages, int n, int i) {
+        int currentCount = 0;
+        int v = ages[i] + 14;
+        for (int j = 0; j < n; j++) {
+            if (ages[j] > ages[i] || (ages[i] < 100 && ages[j] > 100)) {
+                break;
+            }
+            if (i == j || ages[j] * 2 <= v) {
+                continue;
+            }
+            currentCount++;
+        }
+        return currentCount;
     }
 }
