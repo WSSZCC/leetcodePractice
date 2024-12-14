@@ -1,14 +1,36 @@
 package test.leetcode2024;
 
+import java.util.Arrays;
+
 /**
  * 最长公共子序列
  */
 public class LongestCommonSubsequence {
     public static void main(String[] args) {
-        longestCommonSubsequence("hofubmnylkra", "pqhgxgdofcvmr");
+        longestCommonSubsequence1("hofubmnylkra", "pqhgxgdofcvmr");
     }
 
+
     public static int longestCommonSubsequence(String text1, String text2) {
+        int n = text1.length();
+        int m = text2.length();
+        int[][] ints = new int[n + 1][m + 1];
+        for (int i = 0; i < n; i++) {
+            Arrays.fill(ints[i],0);
+        }
+        for (int i = 0; i < n; i++) {
+            char c = text1.charAt(i);
+            for (int j = 0; j < m; j++) {
+                if(c==text2.charAt(j)){
+                    ints[i+1][j+1]=ints[i][j]+1;
+                }else {
+                    ints[i+1][j+1] = Math.max(ints[i][j+1],ints[i+1][j]);
+                }
+            }
+        }
+        return ints[n][m];
+    }
+    public static int longestCommonSubsequence1(String text1, String text2) {
         int n = text1.length();
         int m = text2.length();
         if (n == 1 && m == 1) {
