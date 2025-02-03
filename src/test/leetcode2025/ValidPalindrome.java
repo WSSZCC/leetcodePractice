@@ -1,7 +1,7 @@
 package test.leetcode2025;
 
 /**
- *
+ * 验证回文串 II
  */
 public class ValidPalindrome {
     public boolean validPalindrome(String s) {
