@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
+ * 2080. 区间内查询数字的频率
  */
 public class RangeFreqQuery {
     Map<Integer, List<Integer>> map;
