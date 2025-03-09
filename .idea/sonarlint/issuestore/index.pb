@@ -706,3 +706,13 @@ X
 (src/test/leetcode2025/OrderedStream.java,8\5\85a5e47eac8422e802a4c1d1f227133674599fdb
 T
 $src/test/leetcode2025/Allocator.java,5\e\5eaa3acad176f96f213df01039a8db960a568671
+Y
+)src/test/leetcode2025/BrowserHistory.java,5\2\52b9e1f8ab8836f144ac3b32409a6aa8a90243bf
+U
+%src/test/leetcode2025/TextEditor.java,f\c\fcbe349e7451cdcef3f0f13b5bdb08114711e43a
+V
+&src/test/leetcode2025/FoodRatings.java,7\0\70d2175ccccd4195ca6f8da4a43ca8bfc1146d47
+T
+$src/test/leetcode2025/Partition.java,9\6\96b1f7245e7bd97d54b0936126add3df8947786e
+Q
+!src/test/leetcode2025/MinCut.java,6\b\6b8f5a059bb2fe0e14e8a2048af144cca29c804d
