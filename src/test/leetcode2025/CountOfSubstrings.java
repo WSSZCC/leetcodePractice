@@ -3,7 +3,7 @@ package test.leetcode2025;
 import java.util.HashMap;
 
 /**
- *
+ * 元音辅音字符串计数 I
  */
 public class CountOfSubstrings {
     public int countOfSubstrings(String word, int k) {
