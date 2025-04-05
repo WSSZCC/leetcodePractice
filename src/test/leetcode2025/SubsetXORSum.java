@@ -1,7 +1,7 @@
 package test.leetcode2025;
 
 /**
- *
+ *  找出所有子集的异或总和再求和
  */
 public class SubsetXORSum {
     int ans;
