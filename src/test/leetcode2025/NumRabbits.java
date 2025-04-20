@@ -9,10 +9,6 @@ public class NumRabbits {
         int[] ints = new int[1000];
         int ans = 0;
         for (int answer : answers) {
-           if(answer==0){
-               ans++;
-               continue;
-           }
            if(ints[answer]==0){
                ans+=answer+1;
                ints[answer]=answer;
