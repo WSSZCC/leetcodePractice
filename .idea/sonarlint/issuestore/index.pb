@@ -686,8 +686,6 @@ N
 -src/test/leetcode2025/FindSpecialInteger.java,4\2\4221816f661b13eb325a9fa6f581b9c1ae1f1ba2
 Y
 )src/test/leetcode2025/RangeFreqQuery.java,b\f\bf5a69e2be59922f78bd2277338d047b88df19ea
-V
-&src/test/leetcode2025/MaxDistance.java,0\f\0f83d09f3d1e206967937aab3b4e129ea6a292e4
 _
 /src/test/leetcode2025/LowestCommonAncestor.java,b\4\b439434ac81ad90759a900f1b521ce0698c4f2ad
 U
@@ -892,3 +890,15 @@ Y
 )src/test/leetcode2025/MaxDifference2.java,2\e\2ed09c83c759ff8fdad50cd65d1fb77f17d05e34
 ^
 .src/test/leetcode2025/MaxAdjacentDistance.java,9\c\9c7ddbb0d2dae5831db1c0a3bf1299b2da6f9527
+V
+&src/test/leetcode2025/MinimizeMax.java,0\0\00cc41d2dc885de0f9ff8ed9d43ce92738c05361
+U
+%src/test/leetcode2025/CanBeValid.java,e\6\e6389e795f2020fb189c9d81a8b1bc29e56948cf
+X
+(src/test/leetcode2025/FindKthNumber.java,a\4\a47e8e2f9826f27e29cc37457b927943ee1014d9
+U
+%src/test/leetcode2025/MaxCandies.java,5\7\573348d0f203fb76b117c8bba02e81f11b006315
+[
++src/test/leetcode2025/MinMaxDifference.java,b\6\b69b2ee99d62589426a1b5646c3ef22c8d5ea4d4
+\
+,src/test/leetcode2025/MaximumDifference.java,9\0\9097f9a1f870ea49c46f591b767807177bef9435
